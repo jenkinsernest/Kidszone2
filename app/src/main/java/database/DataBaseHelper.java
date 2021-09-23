@@ -654,8 +654,8 @@ for(int r=0; r<=list2.size()-1; r++){
 	public Long addGoal(List<Goals_Model> list2) {
 		SQLiteDatabase db = this.getWritableDatabase();
 
-		db.execSQL("delete from "+ TABLE_GOALS);
-		db.execSQL("delete from sqlite_sequence where name=  'goals' " );
+		//db.execSQL("delete from "+ TABLE_GOALS);
+		//db.execSQL("delete from sqlite_sequence where name=  'goals' " );
 
 		//onUpgrade(db);
 		long res=0;
@@ -676,7 +676,15 @@ for(int r=0; r<=list2.size()-1; r++){
 			values.put(LEARN_FIRST, list.getLearn_first());
 			values.put(REWARD_EARNED, list.getReward_earned());
 
-			 res= db.insertWithOnConflict(TABLE_GOALS, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+			// res= db.insertWithOnConflict(TABLE_GOALS, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+
+	res=db.update(TABLE_GOALS, values, K_ID + " = ?  AND " + TASK_NAME + " = ?",
+			new String[] { list.getKid(), list.getTaskname() });
+
+	if(res==0){
+		db.insertWithOnConflict(TABLE_GOALS, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+
+	}
 		}
 		db.close(); // Closing database connection
 
@@ -765,7 +773,7 @@ String reward= "0";
 				do {
 
 
-					reward= cursor.getString(cursor.getColumnIndex(REWARD_EARNED));
+					reward= cursor.getString(cursor.getColumnIndex(TOTAL_REWARD));
 
 
 				} while (cursor.moveToNext());

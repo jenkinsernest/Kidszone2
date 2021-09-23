@@ -751,7 +751,7 @@ for(int r=0; r<=list2.size()-1; r++){
 
 		// Select All Query
 		//String selectQuery = "SELECT  * FROM " + TABLE_GOALS  ;
-String reward= "";
+String reward= "0";
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		String selectQuery = "SELECT  * FROM " + TABLE_TOTAL_REWARD + " WHERE " + K_ID + " = " + "'" + id + "'";

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/volume" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/itemname"
+        android:textColor="#222"
+        android:text="Set Volume"
+android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/seek"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Save"
+        android:textColor="#fff"
+        android:id="@+id/ve"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#2BC9AA"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Close"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#2BC9AA"
+android:id="@+id/close"
+        />
+
+</LinearLayout>

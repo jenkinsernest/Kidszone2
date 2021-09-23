@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background2">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:titleTextColor="#444"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_download_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_download"
+
+        android:layout_marginTop="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_download_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar_download_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+<ImageView
+    android:id="@+id/pix"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/books"
+    android:layout_above="@+id/textView_download_fragment"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:tint="#777"
+    android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/textView_download_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:lineSpacingExtra="10dp"
+        android:text="You Have No Downloads. \n Get From Library."
+        android:textColor="#777"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/clickback"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:text="Go"
+        android:background="#eee"
+        android:textColor="#888"
+        android:layout_below="@+id/textView_download_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_gravity="center_vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mrf"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00000000"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/status"
+        android:textColor="#fff"
+        android:text="Mandatory"
+        android:padding="10dp"
+        android:background="@color/red_btn_bg_color"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+android:layout_marginLeft="10dp"
+        android:src="@drawable/educational_goals3" />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/itemname"
+            android:textColor="#000"
+            android:text="Todays Educational Goals"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#eee"
+    android:padding="20dp"
+    android:id="@+id/layout_v"
+android:visibility="gone"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task : Watch Educational Video"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#000"
+        android:id="@+id/vg_name"
+        android:layout_marginBottom="10dp"
+        />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration : 1 hour"
+        android:textStyle="bold"
+        android:textColor="@color/red_btn_bg_color"
+        android:textSize="17dp"
+        android:id="@+id/duration_v"
+        android:layout_marginBottom="10dp"
+
+
+        />
+                <TextView
+                    android:id="@+id/remaining_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Remaining : 1 hour"
+                    android:textColor="#00C853"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reward : Extra 1 hour"
+        android:textStyle="bold"
+        android:textColor="@color/ninos_color"
+android:fontFamily="sans-serif-black"
+        android:textSize="16dp"
+        android:id="@+id/reward_v"
+
+        />
+            </LinearLayout>
+</RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#eee"
+        android:padding="20dp"
+        android:id="@+id/layout_b"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task : Read Books"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#000"
+            android:id="@+id/bg_name"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/good2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/bg_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-15dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration : 1 hour"
+            android:textStyle="bold"
+            android:textColor="@color/red_btn_bg_color"
+            android:textSize="17dp"
+            android:id="@+id/duration_b"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/remaining_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Remaining : 1 hour"
+            android:textColor="#00C853"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reward : Extra 1 hour"
+            android:textStyle="bold"
+            android:textColor="@color/ninos_color"
+            android:textSize="16dp"
+            android:id="@+id/reward_b"
+            android:fontFamily="sans-serif-black"
+
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ok"
+        android:textColor="#fff"
+        android:id="@+id/ve"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_login_bg"
+
+        />
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "750338624859",
+    "firebase_url": "https://jenkins-5632e.firebaseio.com",
+    "project_id": "jenkins-5632e",
+    "storage_bucket": "jenkins-5632e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750338624859:android:1af90d4a4ad9b1d1d15e7e",
+        "android_client_info": {
+          "package_name": "com.playzone.kidszone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750338624859-fmvhpgtpkaagm89bufq7qseo1n7q1o3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVMWaxY56lLIRNKqwZEnWAJ67vCvQObjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750338624859-fmvhpgtpkaagm89bufq7qseo1n7q1o3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

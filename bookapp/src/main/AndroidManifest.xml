@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidebook">
+
+    <application
+        android:name=".Util.YouApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/sidebar"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.choose_school"
+            android:label="@string/title_activity_choose_school"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".Activity.ForgetPassword"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activity.AboutUs" />
+        <activity android:name=".Activity.PrivacyPolicy" />
+        <activity android:name=".Activity.BookDetail" />
+        <activity android:name=".Activity.CategoryByList" />
+        <activity android:name=".Activity.AllComment" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.RelatedBook" />
+        <activity android:name=".Activity.Find" />
+        <activity android:name=".Activity.PDFShow" />
+        <activity android:name=".Activity.AuthorByList" />
+        <activity android:name=".Activity.ReportBook" />
+
+        <service
+            android:name=".Util.NotificationExtenderExample"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Util.DownloadService"
+            android:exported="false" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

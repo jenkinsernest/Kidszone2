@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".fragmentpackage.time_slot_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:text="Sunday :"
+           android:gravity="center_vertical"
+           android:textStyle="bold"
+           android:textSize="18dp"
+           android:textColor="@color/black"
+           android:id="@+id/day"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+           >
+            <CheckBox
+                android:layout_gravity="center"
+                android:id="@+id/restricted"
+                android:text="Restricted"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/unlimited"
+                android:text="Unlimited"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/prohibited"
+                android:text="Prohibited"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/image_restricted"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Start / End Time"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="17.5dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/start"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hint="Start"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:editable="false"
+                android:focusable="false"
+
+                />
+            <TextView
+                android:layout_weight="0.5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  ---  "
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/end"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hint="End"
+                android:editable="false"
+                android:focusable="false"
+
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_unlimited"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/done2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_prohibited"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/restricted"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#444"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

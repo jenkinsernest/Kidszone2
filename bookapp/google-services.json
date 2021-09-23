@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1086422958602",
+    "firebase_url": "https://e-library-7ee8e.firebaseio.com",
+    "project_id": "e-library-7ee8e",
+    "storage_bucket": "e-library-7ee8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086422958602:android:ff9197ce155417a36255f3",
+        "android_client_info": {
+          "package_name": "com.example.androidebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086422958602-hu58fg787td8cgc0n1r23jsqgk4b61r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3a_QKVueE3om9BpqqClnAKr3H7_iCcus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086422958602-hu58fg787td8cgc0n1r23jsqgk4b61r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

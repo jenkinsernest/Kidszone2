@@ -1,0 +1,165 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--  <item name="android:windowShowWallpaper">true</item>
+          <item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="ProgressBar" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorAccent">@color/progressbar_style</item>
+    </style>
+
+    <style name="editText_style" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="colorControlActivated">@color/cursor_editText</item>
+        <item name="android:textColorHighlight">@color/textView_select_text</item>
+    </style>
+
+
+    <style name="DialogTitleTextStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyTextStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="BodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/dialog_text</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/dialog_text_button</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/dialog_text_button</item>
+    </style>
+
+
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+    <item name="sv_backgroundColor">#eeF47FA7</item>
+    <item name="sv_showcaseColor">#eeE91E63</item>
+    <item name="sv_buttonText">Cancel</item>
+    <item name="sv_tintButtonColor">false</item>
+    <item name="sv_buttonBackgroundColor">#03A9F4</item>
+
+    <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="CustomShowcaseTheme3" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#8BC34A</item>
+        <item name="sv_showcaseColor">#aa03A9F4</item>
+        <item name="sv_buttonText">Got It</item>
+        <item name="sv_tintButtonColor">true</item>
+        <item name="sv_detailTextColor">#ffffff</item>
+        <item name="sv_detailTextAppearance">@style/CustomTitle</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+
+    </style>
+  <style name="CustomShowcaseTheme4" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#aa673AB7</item>
+        <item name="sv_showcaseColor">#aa9C27B0</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_tintButtonColor">true</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+
+    </style> <style name="CustomShowcaseTheme5" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#dd00BCD4</item>
+        <item name="sv_showcaseColor">#aa9C27B0</item>
+        <item name="sv_buttonText">Got It</item>
+        <item name="sv_tintButtonColor">true</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mytoast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#E91E63</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stIconStart">@drawable/time2</item>
+       <!-- <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">LONG</item>
+        <item name="stGravity">top</item>
+        <item name="stRadius">5dp</item>
+    </style>
+
+    <style name="mytoast3">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#E91E63</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stIconStart">@drawable/ninos_vle_mascot_small</item>
+       <!-- <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">LONG</item>
+        <item name="stGravity">top</item>
+        <item name="stRadius">5dp</item>
+    </style>
+
+
+    <style name="mytoast2">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#4CAF50</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stIconStart">@drawable/account</item>
+        <!-- <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">LONG</item>
+        <item name="stGravity">top</item>
+        <item name="stRadius">10dp</item>
+    </style>
+
+
+    <style name="DefaultTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="OTPButtonStyle">@style/otpBtnStyle</item>
+        <item name="PayButtonStyle">@style/payBtnStyle</item>
+        <item name="PinButtonStyle">@style/pinButtonStyle</item>
+        <item name="OTPHeaderStyle">@style/otpHeaderStyle</item>
+        <item name="TabLayoutStyle">@style/tabLayoutStyle</item>
+        <item name="PinHeaderStyle">@style/pinHeaderStyle</item>
+        <item name="SavedCardButtonStyle">@style/svdCardsBtnStyle</item>
+    </style>
+</resources>

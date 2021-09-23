@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_gravity="center_vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/mrf"
+
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cancel_botton"
+            android:id="@+id/close"
+            android:layout_marginTop="-3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ninos_vle_mascot_small"
+            android:id="@+id/profile"
+            android:layout_centerHorizontal="true"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/profile"
+
+        android:orientation="vertical">
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/itemname"
+        android:textColor="#222"
+        android:text="Enter Password"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:fontFamily="sans-serif-smallcaps"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/pass"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold"
+        android:textColorHint="#ccc"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0FAEC6"
+     android:textSize="15dp"
+        android:textAlignment="center"
+android:background="@drawable/rectanglesearch"
+        />
+
+
+        <TextView
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/forget"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textColorHint="#ccc"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#0FAEC6"
+            android:textSize="15dp"
+            android:textAlignment="center"
+
+            />
+
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="10dp"
+
+        >
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textColor="#fff"
+        android:id="@+id/save"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/green_button_background"
+android:layout_centerInParent="true"
+        />
+
+
+
+    </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

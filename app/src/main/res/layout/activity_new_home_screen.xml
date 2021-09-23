@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+
+            >
+
+
+            <DigitalClock
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#fff"
+                android:textSize="16dp"
+
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="73dp"
+                android:layout_marginRight="73dp"
+                android:src="@drawable/bat_full" />
+
+            <ImageView
+                android:id="@+id/wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="115dp"
+                android:layout_marginRight="115dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/wifi_disconnect" />
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/for_profile3"
+                android:id="@+id/prof"
+                >
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/profile_image"
+                    android:layout_alignRight="@+id/profile_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="-66dp"
+                    android:layout_marginRight="-66dp"
+                    android:layout_marginBottom="11dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLines="1"
+                    android:padding="3dp"
+                    android:text="Legumchim"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="59dp"
+                    android:layout_height="98dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo"
+                    app:civ_circle_background_color="@color/black" />
+
+            </RelativeLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/time"
+                android:layout_alignStart="@+id/prof"
+                android:layout_marginStart="45dp"
+                android:id="@+id/time_left"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/clock"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="115dp"
+
+                android:layout_marginRight="115dp"
+                android:layout_marginBottom="-31dp"
+                android:text=""
+                android:textColor="#11AF18"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchbar"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rectanglesearch"
+                android:textColor="#fff"
+                android:visibility="gone"
+                app:iconifiedByDefault="false"
+                android:layout_marginTop="10dp"
+                app:queryHint="Search" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/search"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/search_new"
+                app:civ_circle_background_color="#fff" />
+        </RelativeLayout>
+  <!--      <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_swipe">-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <!-- start of recent
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Recent"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/ninos_color"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/forward_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bottonround"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recent"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbars="vertical"
+        android:paddingStart="10dp"
+        android:scrollbarSize="10dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#555"
+        android:layout_marginBottom="10dp"
+        />
+
+
+     end of recent -->
+
+
+
+
+
+
+    <!-- start of app
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp"
+    >
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/appset"
+        android:layout_marginStart="5dp"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="Apps"
+    android:gravity="center_vertical"
+    android:textSize="18dp"
+    android:textColor="#fff"
+    android:layout_marginStart="10dp"
+
+    />
+</LinearLayout>
+
+         <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/apps"
+                android:layout_alignParentRight="true"
+             android:id="@+id/app"
+                />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scrollbars="vertical"
+            android:paddingStart="10dp"
+android:scrollbarSize="10dp"
+            />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eee"
+        android:layout_marginBottom="10dp"
+        />
+
+
+ end of app -->
+
+
+        <!-- start of games
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <ImageView
+                    android:visibility="gone"
+
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/games_real"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Games"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bottonround"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/games_v"
+                android:padding="5dp"
+                />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/games"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scrollbars="vertical"
+            android:paddingStart="10dp"
+            android:scrollbarSize="10dp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eee"
+            android:layout_marginBottom="10dp"
+
+            />
+
+         end of games -->
+
+
+    <!-- start of DC COMICS
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:visibility="gone"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/kidstv"
+                android:layout_marginStart="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DC COMICS"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bottonround"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/dc"
+            android:padding="5dp"            />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dc_comics"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scrollbars="vertical"
+        android:paddingStart="10dp"
+        android:scrollbarSize="10dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eee"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+         start of Tv Series
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:visibility="gone"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/kidstv"
+                android:layout_marginStart="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TV Series"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bottonround"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/tv"
+            android:padding="5dp"            />
+    </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tv_series"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scrollbars="vertical"
+            android:paddingStart="10dp"
+            android:scrollbarSize="10dp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eee"
+            android:layout_marginBottom="10dp"
+
+            />
+
+         end of Tv Series
+
+     start of Video Stories
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:visibility="gone"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/video"
+                android:layout_marginStart="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Video Stories"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bottonround"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/v_stories"
+            android:padding="5dp"                />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vid_stories"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scrollbars="vertical"
+        android:paddingStart="10dp"
+        android:scrollbarSize="10dp"
+        />
+
+
+
+     end of Video Stories -->
+
+        <!-- start of Video Series
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+            <ImageView
+                android:visibility="gone"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/video"
+                android:layout_marginStart="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Video Series"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bottonround"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+                android:id="@+id/v_series"/>
+        </RelativeLayout>
+    -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vid_series"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingStart="5dp"
+            android:nestedScrollingEnabled="true"
+            />
+
+
+
+    <!-- end of Video Series -->
+
+        <!-- start of Books
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <ImageView
+                    android:visibility="gone"
+
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book_big"
+                    android:layout_marginStart="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Books"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bottonround"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+                android:id="@+id/book_v"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/books"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scrollbars="vertical"
+            android:paddingStart="10dp"
+            android:scrollbarSize="10dp"
+            />
+    </LinearLayout>
+      end of Books -->
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+    <!--
+            </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+    <include layout="@layout/app_new_view"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+        -->
+
+</LinearLayout>

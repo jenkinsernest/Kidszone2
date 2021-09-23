@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/con"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nBelow we set out our privacy policy which will govern the way in which we process any personal information that you provide to us. Our details are shown on this sites contact page.
+\nThe site owner can be contacted at the email address on this sites contact page.
+\nYou can access our home page and browse certain  areas of the site without disclosing your personal data save information collected by cookies that we may use (see below).
+"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:layout_margin="6dp"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/privacy"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:paddingLeft="5dp"
+            android:layout_margin="6dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="10dp"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingBottom="15dp"
+            />
+
+
+
+</ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/con"
+        >
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:text="Agree"
+      android:textSize="17dp"
+      android:id="@+id/control"
+      android:textColor="@color/white"
+      android:background="@color/header"
+      />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

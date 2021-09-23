@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+          android:layout_gravity="center_horizontal"
+            android:src="@drawable/credit_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="Need Free Credit ?"
+            android:textColor="#222"
+            android:textSize="27dp"
+            android:textStyle="bold"
+android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/itemname"
+        android:text="Watch video to get Free Credit to Play Premium Games.."
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:textColor="#333"
+        android:fontFamily="sans-serif-black"
+        android:lineSpacingExtra="7dp"
+android:layout_marginBottom="20dp"
+
+        />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Watch for 2 credits"
+        android:textColor="#fff"
+        android:id="@+id/yes"
+        android:textSize="12dp"
+        android:padding="5dp"
+        android:background="@drawable/orange_button_curved"
+android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Not Interested"
+        android:textSize="12dp"
+android:padding="5dp"
+        android:textColor="#FF5722"
+        android:background="@drawable/rectangleblue"
+android:id="@+id/no"
+        />
+</LinearLayout>
+</LinearLayout>

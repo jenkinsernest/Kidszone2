@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#fff"
+    android:fillViewport="true"
+    android:padding="10dp"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/parent_custom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#111"
+        android:text="Welcome to \n Ninos Parent Control App"
+android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Create a Parent Account"
+        android:textColor="#fff"
+        android:id="@+id/parent"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="#2BC9AA"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Login"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#2BC9AA"
+android:id="@+id/retr"
+        />
+
+</LinearLayout>
+</ScrollView>

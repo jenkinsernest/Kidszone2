@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="220dp"
+    android:layout_height="220dp"
+    android:id="@+id/bac"
+android:background="@drawable/fruit1"
+    android:layout_marginBottom="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:src="@drawable/time3"
+       />
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="95dp"
+android:background="@drawable/profile_frame"
+        android:layout_alignParentBottom="true"
+android:layout_centerInParent="true"
+        android:layout_marginBottom="35dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="165dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo"
+            app:civ_circle_background_color="@color/black" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profile_image"
+            android:layout_alignRight="@+id/profile_image"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginEnd="-75dp"
+            android:layout_marginRight="-100dp"
+            android:layout_marginBottom="27dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:text="Legumchim jenins"
+            android:textColor="#fff"
+
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

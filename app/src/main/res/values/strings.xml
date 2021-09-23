@@ -1,0 +1,352 @@
+<resources>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <array name="gender">
+        <item name="select">Select Gender</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+    </array>
+
+    <string name="isRTL">false</string>
+
+    <string name="number">0</string>
+
+    <string name="you_have_allReady_download_book">You have all ready down load this book</string>
+
+    <string name="stories_youVe_related_read_books">Stories you\'ve related read books</string>
+
+    <string name="leave_your_comment">Leave your comment</string>
+
+    <string name="delete_comment">Are you sure want to delete this comment</string>
+    <string name="rating">Rating.....</string>
+
+    <string name="favorite">Favorite</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="faq">Faq</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="all_comment">All Comments</string>
+
+    <string name="items_capital">Items</string>
+    <string name="items">items</string>
+
+    <string name="by">by</string>
+
+
+
+    <string name="no_data_found">No data found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <array name="Days_of_week">
+        <item name="Sunday">SUNDAY</item>
+        <item name="Monday">MONDAY</item>
+        <item name="Tuesday">TUESDAY</item>
+        <item name="Wednesday">WEDNESDAY</item>
+        <item name="Thursday">THURSDAY</item>
+        <item name="Friday">FRIDAY</item>
+        <item name="Saturday">SATURDAY</item>
+    </array>
+    <array name="Months">
+        <item name="Month">Month</item>
+        <item name="January">January</item>
+        <item name="February">February</item>
+        <item name="March">March</item>
+        <item name="April">April</item>
+        <item name="May">May</item>
+        <item name="June">June</item>
+        <item name="July">July</item>
+        <item name="August">August</item>
+        <item name="September">September</item>
+        <item name="October">October</item>
+        <item name="November">November</item>
+        <item name="December">December</item>
+    </array>
+    <array name="Days_of_month">
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+        <item name="1">1</item>
+    </array>
+    <string name="message">Need Permissions</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacy">
+<b>Who may Process Data</b>\n\n
+Your personal information (which includes your name, address and any other details you provide to us which concern you as an individual) may be processed both by us and by other companies within our group. Each of the companies authorised to process your information as mentioned above will do so in accordance with this privacy policy. When you place an order via this website we will store your e-mail address along with any other information you may provide. When you use the services on the website, we may need to collect further information about you. This information may include, but is not limited to, details such as your name and address.
+\n\n
+        <b>Purpose of Processing</b>\n\n
+We will use your information for the purpose of providing you with information about our services, articles and news, fulfilling orders placed by you, processing any other transactions authorised or made by you with us, informing you of special offers and providing other marketing information to you which we think you may find of interest, undertaking product or customer research/development.
+\n\n
+        <b>Disclosure of Information</b>\n\n
+In the unlikely event that a liquidator, administrator or receiver is appointed over us or all or any part of our assets that insolvency practitioner may transfer your information to a third party purchaser of the business provided that purchaser undertakes to use your information for the same purposes as set out in this policy. Your information will not be disclosed to government or local authorities or other government institutions save as required by law or other binding regulations.
+\n\n
+<b>Cookies</b>\n\n
+We may send a small file to your computer when you visit our website. This will enable us to identify your computer, track your behaviour on our website and to identify your particular areas of interest so as to enhance your future visits to this website. We may use cookies to collect and store personal data and we link information stored by cookies with personal data you supply to us. Save for the use of cookies, we do not automatically log data or collect data save for information you specifically provide to us. You can set your computer browser to reject cookies but this may preclude your use of certain parts of this website.
+
+<b>Security</b>\n\n
+We have implemented security policies, rules and technical measures to protect the personal data that we have under our control from unauthorised access, improper use and disclosure, unauthorised destruction or accidental loss.
+\n\n
+        <b>Copyright</b>\n\n
+All website design, text, graphics, the selection and arrangement thereof are owed by the company running this site, or hosting this site, except where provided under the General Public License (http://www.gpl.org). ALL RIGHTS RESERVED.
+\n\n
+        <b>Trademarks</b>\n\n
+All trademarks of are the property of their respective owners and may be registered in certain parts of the world.
+\n\n
+        <b>Disclaimer of Warranty and Liability</b>\n\n
+The following provisions may be curtailed or disallowed by the laws of certain jurisdictions. In such case, the terms hereof are to be read as excluding or limiting such term so as to satisfy such law.
+
+We do not represent or warrant that the information accessible via this website is accurate, complete or current. We have no liability whatsoever in respect of any use which you make of such information.
+
+The information provided on this website has not been written to meet your individual requirements and it is your sole responsibility to satisfy yourself prior to ordering any products or services from us that they are suitable for your purposes.
+
+Whilst we make all reasonable attempts to exclude viruses from the website, we cannot ensure such exclusion and no liability is accepted for viruses. Thus, you are recommended to take all appropriate safeguards before downloading information or images from this website.
+
+All warranties, express or implied, statutory or otherwise are hereby excluded.
+
+Neither we nor any of our employees or affiliated entities will be liable for any kind of damages and howsoever arising including, without limitation, loss of profits, compensatory, consequential, direct, exemplary, incidental, indirect, punitive or special, damages or any liability which you may have to a third party, even if we have been advised of the possibility of such loss.
+
+We are not responsible for the direct or indirect consequences of you linking to any other website from this website.
+
+These terms and this disclaimer and any claim based on use of information from this website shall be governed by the laws of England and Wales and you agree to submit to the non-exclusive jurisdiction of the Courts of England.
+\n\n
+        <b>Consent and enquiries</b>\n\n
+By continuing to use this site and accessing the information on this website, you signal acceptance of the terms and disclaimer set out above. If you do not accept any of these terms, leave this website now. If you have any enquiry or concern about our privacy policy or the way in which we are handling personal data please contact email. If at any time you wish us to cease processing your information please send a message to the Administrator at the email address on this sites contact page.
+
+Shipping usually takes between 3-5 working days should you require express shipping please email us on info@ninosglobaltech.com (Mon-Fri 9:30-5:30 pm excluding national and bank holidays) for next day deliveries and faster options that we can provide.</string>
+
+    <string name="app_name">Ninos Playzone</string>
+
+    <string name="title_activity_fake">FakeActivity</string>
+
+    <string name="accept_card_payments">Accept Card payments</string>
+    <string name="accept_account_payments">Accept Account payments</string>
+    <string name="amount_to_charge_required">Amount to charge (required)</string>
+    <string name="public_key">Public key</string>
+    <string name="amount_to_charge_defaults_to_50">Amount to charge (defaults to ₦50)</string>
+    <string name="txref_required">txRef (required)</string>
+    <string name="narration">Narration</string>
+    <string name="currency_code_e_g_ngn">Currency code e.g. NGN</string>
+    <string name="country_code_e_g_ng">Country code e.g. NG</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="start_payment">START PAYMENT</string>
+    <string name="secret_key">Secret Key</string>
+    <string name="encryption_key">Encryption key</string>
+    <string name="francophone">Accept Franc Mobile Money Payments</string>
+    <string name="uk_bank">Accept UK Bank Payments</string>
+    <string name="sa_bank">Accept South Africa Bank Payments</string>
+    <string name="live">Live</string>
+    <string name="bank_transfer">Accept Bank Transfer Payments</string>
+    <string name="zambia">Accept ZM Mobile money payments</string>
+    <string name="rwanda">Accept RWF Mobile money payments</string>
+    <string name="uganda">Accept UG Mobile money payments</string>
+    <string name="ghana">Accept GH Mobile money payments</string>
+    <string name="staging">Show Staging Label</string>
+    <string name="ach">Accept ACH payments</string>
+    <string name="should_display_fee">Should Display Fee</string>
+    <string name="mpesa">Accept Mpesa payments</string>
+    <string name="pre_auth_charge">Pre Auth Charge</string>
+    <string name="add_subaccounts">Add subaccounts</string>
+    <string name="current_vendor">Your current vendor refs are:</string>
+    <string name="add_vendor">ADD VENDOR</string>
+    <string name="clear">CLEAR</string>
+    <string name="accept_ussd_payments">Accept USSD Payments</string>
+    <string name="accept_barter_payments">Accept Barter Payments</string>
+    <string name="allow_saved_cards">Allow saved cards</string>
+
+
+
+
+    <string name="admob_privacy_link">https://www.your.com/privacyurl</string>
+    <string name="play_more_app">https://play.google.com/store/apps/dev?id=7157478532572017100</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="latest">Latest</string>
+    <string name="school">Schools</string>
+    <string name="category">Genres</string>
+    <string name="author">Author</string>
+    <string name="download">Download</string>
+    <string name="favorites">Favorite</string>
+    <string name="rate_app">Rate App</string>
+    <string name="more_app">More App</string>
+    <string name="share_app">Share App</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="toolbar_Title_AllComment">All Comments</string>
+    <string name="author_by">by</string>
+
+    <string name="Let_me_recommend_you_this_application">Let me recommend you this application</string>
+    <string name="internet_connection">Internet connection not available</string>
+    <string name="internet_connection_message">Internet connection not available check your internet connection</string>
+    <string name="Please_click_BACK_again_to_exit">Please click BACK again to exit</string>
+    <string name="cannot_use_save_permission">Can not use Share future and download option please allow external storage permission</string>
+    <string name="cannot_use_upload_image">Can not Update Profile Image please allow external storage permission</string>
+    <string name="exit">Exit</string>
+    <string name="failed_try_again">Failed try again</string>
+    <string name="wrong">something went to wrong please try again later</string>
+    <string name="contact_msg">Oops.. somthing went wrong</string>
+    <string name="no_data">No Data Yet...</string>
+    <string name="main_activity">Main Activity Android E Book</string>
+
+    <!--<about_us.xml string>-->
+    <string name="app_name_about_us">abcd</string>
+    <string name="about_us_version">Verson</string>
+    <string name="about_us_version_text">1.0</string>
+    <string name="about_us_author">Author</string>
+    <string name="about_us_Company">Company</string>
+    <string name="about_us_company_name">J_Consult</string>
+    <string name="about_us_email">Email</string>
+    <string name="about_us_email_text">legumchim2@gmail.com</string>
+    <string name="about_us_website">Website</string>
+    <string name="about_us_website_text">coming soon</string>
+    <string name="about_us_contact">Contact</string>
+    <string name="about_us_contact_text">+2348106980796</string>
+    <string name="about_us_about">About</string>
+    <!--<about_us.xml string>-->
+
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sem a malesuada rhoncus.
+        Pellentesque ut dolor a dui porttitor porta lacinia non libero. Nunc volutpat arcu quis quam convallis molestie.
+    </string>
+
+    <string name="add_to_favourite">Added To Favourite</string>
+    <string name="remove_to_favourite">Removed From Favourite</string>
+
+    <string name="notification_title">Enable Push Notification</string>
+
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="button_text_login">LOGIN</string>
+    <string name="button_text_register">REGISTER</string>
+    <string name="dont_account">Don\'t Have an Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="text_load_more">View More</string>
+    <string name="text_load_less">View Less</string>
+    <string name="button_text_forgot_password">Forgot your password?</string>
+    <string name="already_have_an_account_yet">Already have an account yet?</string>
+    <string name="register_login_text"> Login</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="send">Send</string>
+    <string name="no_fav">No favorite found..</string>
+    <string name="downloading_message">Other book is downloading wait for first download to complete</string>
+    <string name="phoneNo">Phone No</string>
+    <string name="image_select">please select image</string>
+    <string name="please_enter_phone">Please enter phone no</string>
+    <string name="please_enter_name">please enetr name</string>
+    <string name="latest_book">Latest Book</string>
+    <string name="latest_youve_recently_read">Books which are newly added</string>
+    <string name="button_viewall_home">MORE</string>
+    <string name="top_100_for_your_autor">Top 100 For Your Author</string>
+    <string name="popular_books">Popular Book</string>
+    <string name="stories_youve_recently_read">Books which have been read most</string>
+    <string name="view_details">View Details</string>
+    <string name="view">View</string>
+    <string name="text">4.5</string>
+    <string name="profile">Profile</string>
+    <string name="name_profile">Name :-</string>
+    <string name="email_profile">Email :-</string>
+    <string name="password_profile">Password :-</string>
+    <string name="confirm_password_profile">confirm Password :-</string>
+    <string name="phone_profile">Phone :-</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_profile">Successfully Saved </string>
+    <string name="button_text_skip">Skip</string>
+    <string name="view_number">125K</string>
+    <string name="password_not_match">Password and confirm password does not match</string>
+    <string name="ok">ok</string>
+    <string name="forgot_description">Enter your email address below and  we\'ll send you email with password</string>
+    <string name="date">12 Jan 2018</string>
+    <string name="description">Description :-</string>
+    <string name="related_books">Related Books</string>
+    <string name="author_work">Representative Works</string>
+    <string name="author_work_tag">Read all books of authors</string>
+    <string name="stories_youve_related_read_books">Stories you\'ve related to read books</string>
+    <string name="view_all">View all</string>
+    <string name="comments">Comments:-</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="items_string_category_adapter">items</string>
+    <string name="textView_forget_password">Forget password</string>
+    <string name="not_found_relatedBook">Not Found Related Book</string>
+    <string name="no_comment_found">No Comment Found</string>
+    <!--<string name="please_install_browser">Please install google drive</string>
+    <string name="please_install_browser_else_pdf_viewer">Please install google drive else pdf viewer</string>-->
+    <string name="downloading">Downloading</string>
+    <!--<string name="pdf_reader_notinstall">Pdf reader not install</string>-->
+    <string name="delete">delete</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="read_book">Read</string>
+    <string name="report_book">Report</string>
+    <string name="report_book_title">Report Book :-</string>
+    <string name="report_book_toolbar_title">Report Book</string>
+    <string name="report_issue">Report book issue here</string>
+    <string name="download_book">Download Book</string>
+    <string name="you_have_allready_download_book">You have already downloaded this book</string>
+    <string name="Today">Today</string>
+    <string name="raing">Rating.....</string>
+    <string name="thanks_for_rating_msg">How likely are you to recommend \n moving it to friend?(1-low,5-high)</string>
+    <string name="you_have_not_login">You Have Not Login</string>
+    <string name="please_enter_comment">Please Enter Comment</string>
+    <string name="please_enter_book">Please Enter book name</string>
+    <string name="please_sel_author">Please select author</string>
+    <string name="please_sel_category">Please select course</string>
+    <string name="title_sel_author">[ Select author ]</string>
+    <string name="title_sel_category">[ Select course ]</string>
+    <string name="login">Login</string>
+    <string name="iteam">Items</string>
+    <string name="loading">Loading..</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="search_author">Search book by author</string>
+    <string name="search_author_name">Search book name</string>
+    <string name="search_cat">Search book by course</string>
+
+    <string name="search_title">Search</string>
+    <string name="continue_book">Continue Reading</string>
+    <string name="continue_des">Books you\'ve Recently Opened</string>
+    <string name="today">Today</string>
+    <string name="star">****</string>
+    <string name="textTitle_tag">choose the tag you are interested in</string>
+    <string name="textSub_tag">select your favourite books categories to see more books you like on your home screen</string>
+    <string name="tag">Tag</string>
+    <string name="next">Next</string>
+    <string name="rating_status">give at least one rating</string>
+    <string name="title_activity_choose_school">choose_school</string>
+
+
+
+    <string name="app_sub_name">for your Reading  Pleasure ...</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_into_continue">Sign in to continue</string>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_latest_gridview_adapter"
+    android:layout_width="76dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/relate"
+        android:layout_width="80dp"
+        android:layout_height="110dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView_latest_gridview_adapter"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="#00B8D4" />
+        <View
+            android:id="@+id/view2"
+            android:layout_marginLeft="1.5dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#ccc" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginLeft="5dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#ccc" />
+<!--
+        <View
+            android:id="@+id/view_latest_gridView_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thum_background" />
+-->
+        <View
+            android:id="@+id/viewImage_latest_gridView_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_thum_textview_bg" />
+
+
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            />
+    <TextView
+
+        android:id="@+id/author_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9dp"
+        android:maxLines="1"
+        android:textColor="#999"
+        android:text="Author Name"
+        android:ellipsize="end"
+        android:padding="2dp"
+        android:layout_marginTop="1dp"
+        />
+    </LinearLayout>
+</LinearLayout>

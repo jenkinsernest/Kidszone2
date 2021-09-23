@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/space"
+        android:title=" "
+        android:icon="@drawable/sidebar_logo"
+        app:actionViewClass="android.widget.ImageView"
+        android:orderInCategory="2"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/searchme"
+        android:orderInCategory="0"
+        android:icon="@drawable/search"
+        android:title="search"
+        android:iconTint="@color/black"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/refresh"
+        android:title="Refresh"
+        android:orderInCategory="1"
+        app:actionViewClass="android.widget.ImageView"
+        app:showAsAction="always" />
+</menu>

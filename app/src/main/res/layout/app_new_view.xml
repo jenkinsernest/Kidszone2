@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rjsv.floatingmenu.floatingmenubutton.FloatingMenuButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:floatingMenuActionButton="http://schemas.android.com/tools"
+    android:id="@+id/my_floating_button"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:scaleType="centerInside"
+    android:background="@drawable/appset"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    floatingMenuActionButton:animationType="radial"
+    floatingMenuActionButton:dispositionEndAngle="360"
+    floatingMenuActionButton:dispositionStartAngle="0"
+    floatingMenuActionButton:subActionButtonRadius="100">
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/apps" />
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/games_real" />
+
+
+    <!--
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/three" />
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/four" />
+
+    <rjsv.floatingmenu.floatingmenubutton.subbutton.FloatingSubButton
+        android:id="@+id/sub_button_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/five" />
+-->
+</rjsv.floatingmenu.floatingmenubutton.FloatingMenuButton>

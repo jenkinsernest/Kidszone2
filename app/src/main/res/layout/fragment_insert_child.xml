@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    tools:context=".fragmentpackage.Add_child">
+
+    <!-- TODO: Update blank fragment layout-->
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#fff"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_backward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+android:id="@+id/status"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/back"
+                    android:layout_toRightOf="@+id/back"
+                    android:gravity="center"
+                    android:text="Add Child"
+                    android:textColor="#0FAEC6"
+                    android:textSize="20dp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logoreal"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:civ_circle_background_color="@color/black"
+    android:src="@drawable/upload"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/profile_pic"
+    />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/gender"
+        android:layout_margin="10dp"
+        android:id="@+id/gender"
+        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:hint="Date Of Birth (Year Ignore)"
+        android:focusable="false"
+        android:editable="false"
+         />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+
+            >
+        <Spinner
+            android:id="@+id/months"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:entries="@array/Months"
+            android:background="#1111"
+            android:textAlignment="center"
+           android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+            <Spinner
+            android:id="@+id/years"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#1111"
+            android:textAlignment="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/days"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="#1111"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:id="@+id/pass"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:hint="Password (Default None)"
+        />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bottonblue"
+            android:text="Save Data"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,86 @@
+
+
+
+        <RelativeLayout
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/top"
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="10dp"
+android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="#33aaaaaa"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="#33aaaaaa"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/details"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dots"
+                        android:paddingEnd="5dp" />
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/xx"
+                        android:paddingRight="5dp"
+                        android:layout_alignParentRight="true" />
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id">
+            </com.google.android.gms.ads.AdView>
+
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/web"
+    />
+
+        </RelativeLayout>
+
+
+
+
+
+
+

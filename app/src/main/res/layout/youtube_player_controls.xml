@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+         android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<!--
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebeff2" />
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:showFullScreenButton="true"
+app:useWebUi="false"
+app:showYouTubeButton="false"
+            />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/ninos_color"
+                    android:layout_alignParentEnd="true"
+                  android:id="@+id/top_cover"
+
+                    android:visibility="visible"
+                    />
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/player_cover"
+                    android:id="@+id/bottom_cover"
+                    android:layout_alignParentEnd="true"
+android:layout_alignBottom="@+id/youtube_player_view"
+                    android:visibility="visible"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ninos Playzone"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/dtext"
+android:layout_margin="20dp"
+                    android:textSize="16dp"
+                    android:layout_alignBottom="@+id/youtube_player_view"
+
+                    />
+        </RelativeLayout>
+<!--
+        <LinearLayout
+            android:id="@+id/video_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#444"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10">
+
+                <ImageButton
+                    android:id="@+id/play_video"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/ic_play" />
+
+                <ImageButton
+                    android:id="@+id/pause_video"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/ic_pause" />
+
+                <SeekBar
+                    android:id="@+id/video_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/play_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+
+                    android:textColor="@android:color/white" />
+        </LinearLayout>
+
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                    android:background="#556"
+                        >
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/video10"
+                    android:layout_marginStart="5dp"
+
+
+                    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textStyle="bold"
+    android:id="@+id/now_playing"
+    android:fontFamily="sans-serif-smallcaps"
+    android:text="Now Playing : "
+    android:textColor="#fff"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Related Videos"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:textColor="#333"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/related"
+                    />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingStart="5dp"
+            android:scrollbarSize="10dp"
+            />
+</LinearLayout>
+</ScrollView>

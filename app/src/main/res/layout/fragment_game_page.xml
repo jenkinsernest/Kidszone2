@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentpackage.Add_child">
+
+
+    <!-- TODO: Update blank fragment layout
+     android:background="@drawable/fourth"-->
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#eee"
+            android:layout_marginTop="5dp"
+
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/games_real" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+
+                    android:layout_height="match_parent"
+
+
+                    android:gravity="center"
+                    android:text="Games"
+                    android:textColor="#00B8D4"
+                    android:textSize="18dp" />
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#afff"
+
+    >
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/coin3"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginEnd="70dp"
+        android:id="@+id/coin"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="#EFD912"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/adapt"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+android:paddingLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.5"
+        />
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0000"
+        >
+
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_backward" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_gravity="center" android:orientation="vertical"
+    android:id="@+id/dialog"
+    android:background="@drawable/dialog_background"
+    android:padding="10dp" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_margin="20dp">
+
+    <TextView android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading data.. Please wait for a while"
+        android:fontFamily="sans-serif"/>
+
+    <TextView android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/dialog_text"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading the quizes"
+        android:fontFamily="sans-serif-light"/>
+
+    <LinearLayout android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/loader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/loader"/>
+    </LinearLayout>
+    <Button android:textStyle="bold"
+        android:textColor="#304ffe"
+        android:layout_gravity="right"
+        android:id="@+id/btncancel"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="Loading"/>
+</LinearLayout>

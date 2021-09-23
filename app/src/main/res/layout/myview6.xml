@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#eee"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image"
+            android:padding="10dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/account"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/childname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="Lock Notification bar"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/icon"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow_forward" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radio"
+    android:padding="20dp"
+    android:visibility="gone"
+    android:orientation="horizontal">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:id="@+id/enabled"
+        android:text="Enable"/>
+
+     <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/disabled"
+         android:textStyle="bold"
+         android:text="Disable"/>
+
+</RadioGroup>
+
+</LinearLayout>

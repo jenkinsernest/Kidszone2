@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="10dp"
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/taskname"
+        android:textColor="#fff"
+        android:text="Set Educational Goals"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/alotted_time"
+            android:textColor="#fff"
+            android:text="2 hour , 15 minutes"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+
+            />
+    </RelativeLayout>
+
+   <!-- <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:progressTint="@color/ninos_color" />
+-->
+    <com.dualcores.swagpoints.SwagPoints
+        xmlns:swagpoints="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/seek"
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:padding="64dp"
+        swagpoints:min="0"
+        swagpoints:max="120"
+        swagpoints:step="10"
+        swagpoints:progressColor="@color/color_progress"
+        swagpoints:progressWidth="12dp"
+        swagpoints:arcColor="@color/color_arc"
+        swagpoints:arcWidth="20dp"
+        swagpoints:textSize="32sp"
+        swagpoints:textColor="@color/white"
+        swagpoints:indicatorIcon="@drawable/indicator"
+        />
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginBottom="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spent : 20 mins"
+        android:id="@+id/spent"
+        android:textColor="#fff"
+
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status: not started"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:id="@+id/status"
+        android:textColor="#fff"
+
+        />
+
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.5px"
+    android:background="#000"
+    />
+
+</LinearLayout>

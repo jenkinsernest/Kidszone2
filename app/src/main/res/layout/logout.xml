@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_gravity="center_vertical"
+
+    >
+<LinearLayout
+android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mrf"
+
+    >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/ninos"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ninos_logo_new" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/itemname"
+        android:textColor="#222"
+        android:text="You Are About To Logout"
+android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Proceed"
+        android:textColor="#fff"
+        android:id="@+id/ve"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/bottonlogout"
+android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Ignore"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/bottonlogout"
+        android:layout_gravity="center_horizontal"
+android:id="@+id/close"
+        />
+
+</LinearLayout>
+</ScrollView>

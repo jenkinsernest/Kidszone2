@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+android:background="#2000"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:id="@+id/header"
+            android:layout_marginBottom="5dp"
+
+            >
+
+
+
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:background="@drawable/for_profile"
+                android:layout_alignParentBottom="true"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="59dp"
+                    android:layout_height="98dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo"
+                    app:civ_circle_background_color="@color/black" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/profile_image"
+                    android:layout_alignRight="@+id/profile_image"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="-66dp"
+                    android:layout_marginRight="-66dp"
+                    android:layout_marginBottom="11dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|start"
+                    android:lineSpacingExtra="2dp"
+                    android:maxLines="1"
+                    android:padding="3dp"
+                    android:text="Legumchim"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="-31dp"
+                android:layout_alignBottom="@+id/clock"
+
+                android:layout_marginEnd="115dp"
+                android:layout_marginRight="115dp"
+                android:text=""
+                android:textColor="#11AF18"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="115dp"
+                android:layout_marginRight="115dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/wifi_disconnect" />
+
+            <ImageView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="73dp"
+                android:layout_marginRight="73dp"
+                android:src="@drawable/bat_full" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/clock"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="-31dp"
+                android:text="23-2-2021"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <DigitalClock
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="drag down to refresh"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:textSize="11dp"
+            />
+        <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:id="@+id/main_swipe">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingStart="10dp"
+android:scrollbarSize="10dp"
+
+            />
+
+
+        </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7fff"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/btn_backward" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

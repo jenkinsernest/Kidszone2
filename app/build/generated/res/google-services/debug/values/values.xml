@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">750338624859-fmvhpgtpkaagm89bufq7qseo1n7q1o3o.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://jenkins-5632e.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">750338624859</string>
+    <string name="google_api_key" translatable="false">AIzaSyAVMWaxY56lLIRNKqwZEnWAJ67vCvQObjQ</string>
+    <string name="google_app_id" translatable="false">1:750338624859:android:1af90d4a4ad9b1d1d15e7e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVMWaxY56lLIRNKqwZEnWAJ67vCvQObjQ</string>
+    <string name="google_storage_bucket" translatable="false">jenkins-5632e.appspot.com</string>
+    <string name="project_id" translatable="false">jenkins-5632e</string>
+</resources>

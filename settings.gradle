@@ -1,0 +1,7 @@
+include ':library'
+include ':bookapp'
+include ':rating-view'
+
+include ':unity-ads'
+include ':app'
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@color/blueBackground"/>
+    <item android:top="200dp">
+        <bitmap android:gravity="top" android:src="@drawable/clouds_background" android:antialias="false" android:filter="false" android:dither="false"/>
+    </item>
+</layer-list>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    tools:context=".fragmentpackage.Premium_page">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#eee"
+
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_backward" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/back"
+                    android:layout_toRightOf="@+id/back"
+                    android:gravity="center"
+                    android:text="Premium"
+                    android:textColor="#2196F3"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="50dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:text="Basic"
+                    android:textColor="#2196F3"
+                    android:textSize="20dp"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Account type"
+                    android:textColor="#2196F3"
+                    android:textSize="20dp"
+                    />
+
+
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <RadioButton
+                android:id="@+id/monthly"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="10dp"
+                android:text="Monthly Subcription \n $1.8/month"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginStart="30dp"
+                android:text="Charge every month"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:layout_marginBottom="15dp"
+            />
+            <RadioButton
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="10dp"
+                android:id="@+id/yearly"
+                android:text="Yearly Subscription \n $23.03/year"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginStart="30dp"
+                android:text="Charge every year"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Premium Features"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    >
+
+   <ImageView
+       android:layout_width="50dp"
+       android:layout_height="30dp"
+       android:src="@drawable/done2"
+       android:layout_marginRight="10dp"
+       />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Ads"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    >
+
+   <ImageView
+       android:layout_width="50dp"
+       android:layout_height="30dp"
+       android:src="@drawable/done2"
+       android:layout_marginRight="10dp"
+       />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Access To Premium/Educational Games for kids"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    >
+
+   <ImageView
+       android:layout_width="50dp"
+       android:layout_height="30dp"
+       android:src="@drawable/done2"
+       android:layout_marginRight="10dp"
+       />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cloud Backup, and more"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+</LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/done2"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More Than One Child Account"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bottonblue"
+                android:text="Purchase"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

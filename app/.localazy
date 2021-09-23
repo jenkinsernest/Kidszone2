@@ -1,0 +1,7 @@
+[packages]
+com.example.kidszone = raa
+
+[localazy]
+allStringsUploaded = true
+showWelcomeMessage = false
+

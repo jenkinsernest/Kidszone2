@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fresh2"
+
+    tools:context=".fragmentpackage.Add_child">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#eee"
+            android:layout_marginTop="5dp"
+
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/back2"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/accset" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/back2"
+                    android:layout_toRightOf="@+id/back2"
+                    android:gravity="center"
+                    android:text=" Your Children"
+                    android:textColor="#00B8D4"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/addchild" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/show"
+        android:layout_weight="0.5"
+        >
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:src="@drawable/addchild"
+        android:id="@+id/imadd"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imadd"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="-61dp"
+            android:text="Click to Add Child"
+            android:textColor="#6D40BD"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/adapt"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_weight="2"
+        />
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7fff"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/btn_backward" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ninos_vle_mascot_small"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -193,6 +193,9 @@
         <activity
             android:name="com.playzone.kidszone.RelatedBook"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.playzone.kidszone.logout_alertdialog"
+            android:screenOrientation="portrait" />
 
         <receiver android:name="com.playzone.kidszone.broadcastreceivers.PowerConnectionReceiver" >
             <intent-filter>
@@ -220,6 +223,11 @@
 
         <service
             android:name="com.playzone.kidszone.service.BackgroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+        <service
+            android:name="com.playzone.kidszone.service.TimingService"
             android:enabled="true"
             android:exported="false"
             android:stopWithTask="false" />

@@ -76,6 +76,7 @@ import com.playzone.kidszone.models.search_model;
 import com.playzone.kidszone.models.video_cat_model;
 import com.playzone.kidszone.models.video_series_model;
 import com.playzone.kidszone.service.TSLsocketfactory;
+import com.playzone.kidszone.service.TimingService;
 import com.playzone.kidszone.service.foregroundService;
 
 import org.json.JSONArray;
@@ -247,6 +248,8 @@ public RelativeLayout timed_zone;
     public void onResume() {
         super.onResume();
 
+
+
         if (Parent.dialog != null) {
             Parent.dialog.dismiss();
 
@@ -324,8 +327,19 @@ public RelativeLayout timed_zone;
 
                 if(Parent.data_clear_by_android.equalsIgnoreCase("false")) {
 
-                    schedule_AlarmManager();
-                    timer();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    getActivity().startForegroundService(new Intent(getActivity(), TimingService.class)
+                            .putExtra("type", "second")
+                    );
+
+                } else {
+                    getActivity().startService(new Intent(getActivity(), TimingService.class)
+                            .putExtra("type", "second"));
+                }
+
+
+                   // schedule_AlarmManager();
+                   // timer();
                 }
                 else{
                     getActivity().finish();

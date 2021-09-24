@@ -184,6 +184,10 @@
             android:name=".RelatedBook"
             android:screenOrientation="portrait" />
 
+ <activity
+            android:name=".logout_alertdialog"
+            android:screenOrientation="portrait" />
+
 
 
                <receiver android:name=".broadcastreceivers.PowerConnectionReceiver">
@@ -214,6 +218,11 @@
 
                <service
                    android:name=".service.BackgroundService"
+                   android:enabled="true"
+                   android:stopWithTask="false"
+                   android:exported="false" />
+        <service
+                   android:name=".service.TimingService"
                    android:enabled="true"
                    android:stopWithTask="false"
                    android:exported="false" />

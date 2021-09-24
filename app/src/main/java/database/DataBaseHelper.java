@@ -678,6 +678,8 @@ for(int r=0; r<=list2.size()-1; r++){
 
 			// res= db.insertWithOnConflict(TABLE_GOALS, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
+
+
 	res=db.update(TABLE_GOALS, values, K_ID + " = ?  AND " + TASK_NAME + " = ?",
 			new String[] { list.getKid(), list.getTaskname() });
 
